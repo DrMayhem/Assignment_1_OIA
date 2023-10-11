@@ -28,7 +28,7 @@ def recognize_audio_file(audio_file):
 
 # Input from user
 # Replace the filename with the path to your audio file
-audio_file_path = r"C:\Users\Umansh Agarwal\Downloads\Openinapp\output.wav"
+audio_file_path = r"Enter\path\to\input\file"
 query = recognize_audio_file(audio_file_path)
 while query == "None": 
     query = recognize_audio_file(audio_file_path)
@@ -47,7 +47,7 @@ to_lang_code = language_codes['telugu']
 translated_text_telugu = translator.translate(query, dest=to_lang_code).text
 
 # Specify the output directory for saving audio files
-output_directory = r"C:\Users\Umansh Agarwal\Downloads\Openinapp"
+output_directory = r"Path\to\your\directory"
 
 # Save translations to audio files
 for lang, translated_text in zip(['english', 'hindi', 'telugu'], [translated_text_english, translated_text_hindi, translated_text_telugu]):
